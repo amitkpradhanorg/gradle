@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
+apply plugin: 'sonarqube'
 
 mainClassName = 'hello.HelloWorld'
 
@@ -29,13 +30,3 @@ dependencies {
 
 // tag::wrapper[]
 // end::wrapper[]
-
-plugins {
-  id "org.sonarqube" version "3.3"
-}
-
-sonarqube {
-  properties {
-    property "sonar.projectKey", "gradle"
-  }
-}
