@@ -4,7 +4,7 @@ plugins {
 
 sonarqube {
   properties {
-    property "sonar.projectKey", "gradle"
+    property "sonar.projectKey", "abc"
   }
 }
 apply plugin: 'java'
